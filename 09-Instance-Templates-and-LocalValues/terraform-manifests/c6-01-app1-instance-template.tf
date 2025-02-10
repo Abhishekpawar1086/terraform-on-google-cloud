@@ -17,6 +17,7 @@ resource "google_compute_region_instance_template" "myapp1" {
     boot              = true
   }
   # Network Info
+#this will alow you to create this vm templet in owr vpc which we have created priviously
   network_interface {
     subnetwork = google_compute_subnetwork.mysubnet.id 
     access_config {
