@@ -21,7 +21,7 @@ variable "machine_type" {
 }
 
 
-# Environment Variable
+# Environment Variable and business variables are just add to give the environmant and ownersgip to project 
 variable "environment" {
   description = "Environment Variable used as a prefix"
   type = string
