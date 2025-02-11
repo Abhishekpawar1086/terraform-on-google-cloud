@@ -1,3 +1,4 @@
+# this one is for listof compute zone inwhich you are going to create a vm s
 # Terraform Datasources
 # Datasource: Get a list of Google Compute zones that are UP in a region
 data "google_compute_zones" "available" {   
@@ -10,7 +11,7 @@ output "compute_zones" {
   value = data.google_compute_zones.available.names
 }
 
-
+#this one is for image
 # Datasource: Get information about a Google Compute Image
 data "google_compute_image" "my_image" {
   #Debian
