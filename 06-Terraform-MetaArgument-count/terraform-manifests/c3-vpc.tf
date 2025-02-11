@@ -6,7 +6,7 @@ resource "google_compute_network" "myvpc" {
 
 # Resource: Subnet
 resource "google_compute_subnetwork" "mysubnet" {
-  name = "${var.gcp_region1}-subnet"
+  name = "${var.gcp_region1}-subnet" 2 subnet are going to create thats why we added & sign to auto matically rename the 2nd subnet
   region = var.gcp_region1
   ip_cidr_range = "10.128.0.0/20"
   network = google_compute_network.myvpc.id 
